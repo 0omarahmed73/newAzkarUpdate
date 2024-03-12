@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "azkarAlmuslim",
-    "slug": "azkarAlmuslim",
-    "version": "1.0.0",
+    "name": "أذكار المسلم",
+    "slug": "azkarmuslim",
+    "version": "3.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/hello.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/photo_2024-03-04_20-44-09.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,32 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/hello.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.azkarMusli.omar"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/hello.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/path/to/myNotificationIcon.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./local/path/to/mySound.wav",
+            "./local/path/to/myOtherSound.wav"
+          ],
+          "mode": "production"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e38d0459-53bd-43ab-97d2-e4f669792e2a"
+      }
     }
   }
 }
